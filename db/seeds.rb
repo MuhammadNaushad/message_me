@@ -7,3 +7,6 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Message.create(body: "This is my first chat app", user: User.first)
+Message.create(body: "This is my first chat app", user: User.first)
+Message.create(body: "This is my first chat app", user: User.first)
