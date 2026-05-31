@@ -1,0 +1,13 @@
+<% flash.each do |name, msg| %>
+  <div class="ui <%= name == "success" ? "success" : "negative" %> message" style="width: 70%; margin: 15px auto 0; display: flex; align-items: center; position: relative;">
+    <p class="header" style="margin: 0;"><%= msg %></p>
+    <i class="close icon" style="position:absolute; right: 10px; top: 43%; transform: translateY(-50%); cursor:pointer;"></i>
+  </div>
+<% end %>
+<script>
+  document.querySelectorAll('.message .close.icon').forEach(function(icon) {
+    icon.addEventListener('click', function() {
+      this.closest('.message').style.display = 'none';
+    });
+  });
+</script>
